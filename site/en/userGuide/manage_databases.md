@@ -26,7 +26,7 @@ A Milvus cluster ships with a default database, named 'default'. Collections are
 To change the default database, do as follows:
 
 ```python
-db.using_database("book")
+db.using_database("books")
 ```
 
 You can also set a database to use upon connecting to your Milvus cluster as follows:
@@ -47,7 +47,7 @@ To find all existing databases in your Milvus cluster, do as follows:
 db.list_database()
 
 # Output
-['default', 'book']
+['default', 'books']
 ```
 
 ## Drop database
@@ -55,7 +55,7 @@ db.list_database()
 To drop a database, you have to drop all its collections first. Otherwise, the drop fails.
 
 ```python
-db.drop_database("book")
+db.drop_database("books")
 
 db.list_database()
 
